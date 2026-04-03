@@ -99,6 +99,13 @@ public class GameController {
         return ResponseEntity.ok(Map.of("message", "Team " + color + " reset to start!"));
     }
 
+    @PostMapping("/reset-all")
+    public ResponseEntity<?> resetAllTeams() {
+        // This clears the entire Map: everyone is forgotten and timers are killed
+        teams.clear();
+        return ResponseEntity.ok(Map.of("message", "Global Reset Complete! All teams cleared."));
+    }
+
     @GetMapping("/stats")
     public ResponseEntity<?> getStats() {
         List<Map<String, Object>> statsList = new ArrayList<>();
