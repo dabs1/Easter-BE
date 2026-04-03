@@ -6,7 +6,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000") // Allow React to connect
+@CrossOrigin(origins = "https://easter-fe.tom4s-fr4ncisco.workers.dev") // Allow React to connect
 public class GameController {
 
     // Simple in-memory storage for demonstration
