@@ -25,7 +25,8 @@ public class GameController {
     private final Map<String, Integer> teamOffsets = Map.of(
             "RED", 1,
             "BLUE", 2,
-            "GREEN", 3
+            "GREEN", 3,
+            "YELLOW", 4
     );
 
     @PostMapping("/start")
