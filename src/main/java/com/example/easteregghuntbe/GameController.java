@@ -11,11 +11,13 @@ public class GameController {
 
     // Simple in-memory storage for demonstration
     private final List<Spot> spots = Arrays.asList(
-            new Spot(0, "START", "ENIGMA", "Bem-vindos! O primeiro ovo está na base do Grande Carvalho.", "CARVALHO-OVO"),
-            new Spot(1, "A", "ANAGRAM", "Desembaralha: O Ç I O L A B", "BALOICO-OVO"),
+            new Spot(3, "C", "ENIGMA", "Sintam as mudanças da primavera lá fora. Não sintam vergonha, sejam tugas e olhem para a vida vizinha.", "FLOR-OVO-64"),
+            new Spot(1, "A", "ANAGRAM", "Desembaralha: U F S U R", "POMBO-OVO"),
             // A pista 2 (Sudoku) agora envia a grelha, a solução e a pista escondida!
-            new Spot(2, "B", "SUDOKU", "{\"initial\":[[0,3,4,0],[4,0,0,2],[1,0,0,3],[0,2,1,0]],\"solution\":[[2,3,4,1],[4,1,3,2],[1,4,2,3],[3,2,1,4]],\"clue\":\"Boa! A tua próxima pista: Procura onde se faz o 'número dois'.\"}", "WC-OVO"),
-            new Spot(3, "C", "ENIGMA", "Tenho escorrega mas não sou um parque. (A piscina)", "PISCINA-OVO")
+            new Spot(2, "B", "SUDOKU", "{\"initial\":[[0,3,4,0],[4,0,0,2],[1,0,0,3],[0,2,1,0]],\"solution\":[[2,3,4,1],[4,1,3,2],[1,4,2,3],[3,2,1,4]],\"clue\":\"Boa! A tua próxima pista: 'Número dois'.\"}", "WC-OVO"),
+            new Spot(0, "START", "ENIGMA", "Um caracol é sempre um bom petisco :)", "VASO-OVO"),
+            new Spot(4, "D", "ENIGMA", "79 55 TP", "CARRO-OVO"),
+            new Spot(5, "E", "ENIGMA", "De manhã ainda está um pouco de frio não acham?", "CASACO-FIXE-OVO")
     );
 
     // Track teams in memory: Maps the Team Color to their progress and time stats
